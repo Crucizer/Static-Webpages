@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mount Hakone</title>
     <style>
       body {
@@ -43,6 +44,16 @@
         font-size: 25px;
         font-family: "PT Sans Narrow", sans-serif;
       }
+
+      @media only screen and (max-width: 768px) {
+        img.second {
+          display: none;
+        }
+
+        img.first {
+          width: 200%;
+        }
+      }
     </style>
     <!-- Fonts  -->
     <link
@@ -57,10 +68,10 @@
   <body>
     <div class="heading row">
       <div class="column">
-        <img src="images/hakone1.jpg" alt="Image 1" />
+        <img class="first" src="images/hakone1.jpg" alt="Image 1" />
       </div>
       <div class="column">
-        <img src="images/hakone2.jpg" alt="Image 2" />
+        <img class="second" src="images/hakone2.jpg" alt="Image 2" />
       </div>
 
       <div class="title">Mount Hakone</div>

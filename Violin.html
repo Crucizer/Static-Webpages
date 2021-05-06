@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Violin</title>
     <style>
       body {
@@ -38,6 +39,16 @@
         width: 100%;
       }
 
+      @media only screen and (max-width: 768px) {
+        img.second {
+          display: none;
+        }
+
+        img.first {
+          width: 200%;
+        }
+      }
+
       .content p {
         color: black;
         font-size: 25px;
@@ -57,10 +68,10 @@
   <body>
     <div class="heading row">
       <div class="column">
-        <img src="images/violin1.jpg" alt="Image 1" />
+        <img class="first" src="images/violin1.jpg" alt="Image 1" />
       </div>
       <div class="column">
-        <img src="images/violin2.jpeg" alt="Image 2" />
+        <img class="second" src="images/violin2.jpeg" alt="Image 2" />
       </div>
 
       <div class="title">Violin</div>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Supernova</title>
     <style>
       body {
@@ -28,7 +29,7 @@
         bottom: -10px;
         left: 10px;
         background: #fcdb03;
-        padding: 20px 20px;
+        padding: 1rem 1rem;
         color: black;
         font-weight: 900;
         font-family: "Montserrat", sans-serif;
@@ -42,6 +43,16 @@
         color: black;
         font-size: 25px;
         font-family: "PT Sans Narrow", sans-serif;
+      }
+
+      @media only screen and (max-width: 768px) {
+        img.second {
+          display: none;
+        }
+
+        img.first {
+          width: 200%;
+        }
       }
     </style>
     <!-- Fonts  -->
@@ -57,10 +68,10 @@
   <body>
     <div class="heading row">
       <div class="column">
-        <img src="images/supernova1.jpg" alt="Image 1" />
+        <img class="first" src="images/supernova1.jpg" alt="Image 1" />
       </div>
       <div class="column">
-        <img src="images/supernova2.jpeg" alt="Image 2" />
+        <img class="second" src="images/supernova2.jpeg" alt="Image 2" />
       </div>
 
       <div class="title">Supernova</div>
